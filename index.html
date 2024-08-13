@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Decodificador de Código</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <img src="alura.png" alt="logo alura" style="height: 50px;">
+                <nav>
+                    <ul class="botoes-cabecalho">
+                        <li><a class="botoes-cabecalho" href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Decodificador de código</h1>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 45%;">
+                    <h2>Decodificador</h2>
+                    <form id="decoderForm">
+                        <label for="encodedText">Insira o código:</label><br>
+                        <input type="text" id="encodedText" name="encodedText"><br><br>
+                        <button type="button" onclick="decodeText()">Decodificar</button>
+                    </form>
+                    <p id="decodedResult"></p>
+                </div>
+                <div style="width: 45%;">
+                    <h2>Codificador</h2>
+                    <form id="encoderForm">
+                        <label for="decodedText">Insira o texto:</label><br>
+                        <input type="text" id="decodedText" name="decodedText"><br><br>
+                        <button type="button" onclick="encodeText()">Codificar</button>
+                    </form>
+                    <p id="encodedResult"></p>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <p>Desenvolvido por Marcus Marinovic</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
